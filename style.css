@@ -1,0 +1,213 @@
+/**
+ * Made by: TEAM SUDOKU ZONE
+ * SV-College Front-End course
+ * Sudoku project style
+ */
+
+#MainWindow{
+    height:90%;
+    width:90%;
+    margin: 5%;
+    float:center;
+    text-align: center;
+    font-family: "Quamaine";
+    border-style: solid;
+    border-color: black;
+    visibility:visible;
+    font-size: 140px;
+}
+#signIn{
+    height:90%;
+    width:90%;
+    margin: 5%;
+    border-style:solid;
+    border-color: black;
+    float: center;
+    font-family: "Quamaine";
+    text-align: center;
+    visibility: hidden;
+}
+#registreation{
+    height:90%;
+    width:90%;
+    margin: 5%;
+    border-style:solid;
+    border-color: black;
+    float: center;
+    font-family: "Quamaine";
+    text-align: center;
+    visibility: hidden;
+}
+#tableR{
+    text-align: left;
+    margin-left:auto;
+    margin-right:auto; 
+}
+#Game{
+    height:90%;
+    width:90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    border-style:solid;
+    border-color: black;
+    float: center;
+    font-family: "Quamaine";
+    text-align: center;
+    visibility: hidden;
+}
+#chooseLevel{
+    height:90%;
+    width:90%;
+    margin: 5%;
+    border-style:solid;
+    border-color: black;
+    float: center;
+    font-family: "Quamaine";
+    text-align: center;
+    visibility: hidden;
+}
+#grid{
+    border-style: solid;
+    text-align: center;
+    border:1px solid black;
+    margin-left:auto;
+    margin-right:auto;
+}
+td.tdSudoku{
+    border-style:solid;
+    border-color: black;
+    height: 50px;
+    width: 50px;
+}
+input.emptyCell{
+    color: rebeccapurple;
+    padding: 0;
+    border:  2px dotted darkslateblue;
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    font-size: 30px;
+    outline: none;
+    cursor: pointer;
+    background-color: gainsboro;
+}
+input.numCell{
+    color: #000000;
+    padding: 0;
+    border: 0;
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    font-size: 30px;
+    outline: none;
+    background-color: whitesmoke;
+}
+#i0j2, #i0j5, #i1j2, #i1j5, #i2j5,
+#i3j2,#i3j5, #i4j2, #i4j5, #i5j2, #i5j5, #i2j2,
+#i6j2, #i6j5, #i7j2, #i7j5, #i8j2, #i8j5 {
+	border-right: 6px solid;
+}
+#i2j0, #i2j1, #i2j3, #i2j4, #i2j6, #i2j7,
+#i5j0, #i5j1, #i5j3, #i5j4, #i5j6, #i5j7, #i2j2, #i2j5,
+#i2j8, #i5j2, #i5j5, #i5j8 {
+	border-bottom: 6px solid;
+}
+#lblTime{
+    border:none;
+    color: darkslateblue;
+}
+#nameEmpty, #nameError, #passEmpty, #passError, #enterUserNameR, #existUserNameR, #enterPassword, #enterPassword2, #equalPassword {
+    display: none;
+    color: red;
+    font-size: 15px;
+}
+#backToMainHref{
+    font-size: 15px;
+    color: black;
+}
+#changeLevelLink{
+    font-size: 20px;
+    color: #2f848a;
+    visibility: hidden;
+}
+#time{
+    color: darkslateblue;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 70px;
+}
+#userDisplay{
+    color: darkslateblue;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 200px;
+}
+#userLevel{
+    color: darkslateblue;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 60px;
+}
+#hintsLeft{
+    color: #2f848a;
+    font-size: 18px;
+    text-align: left;
+    margin-left: 60px;
+}
+.menuButtons{
+    width: 100px;
+}
+#message{
+    font-size: 30px;
+}
+#t1{
+    position: absolute;
+    margin-left: -210px;
+    animation: moveOddChars 1s 2;
+}
+#t2{
+    position: absolute;
+    margin-left: -140px;
+    animation: moveEvenChars 1s 2;
+}
+#t3{
+    position: absolute;
+    margin-left: -70px;
+    animation: moveOddChars 1s 2;
+}
+#t4{
+    position: absolute;
+    margin-left: 0px;
+    animation: moveEvenChars 1s 2;
+}
+#t5{
+    position: absolute;
+    margin-left: 70px;
+    animation: moveOddChars 1s 2;
+}
+#t6{
+    position: absolute;
+    margin-left: 140px;
+    animation: moveEvenChars 1s 2;
+}
+@keyframes moveOddChars{
+    0%{margin-top:10px;}
+    25%{margin-top:0px;}
+    50%{margin-top:10px;}
+    75%{margin-top:20px;}
+    100%{margin-top:10px;}
+}
+@keyframes moveEvenChars{
+    0%{margin-top:10px;}
+    25%{margin-top:20px;}
+    50%{margin-top:10px;}
+    75%{margin-top:0px;}
+    100%{margin-top:10px;}
+}
+@font-face {
+    font-family: 'Quamaine';
+    src: url('Quamaine.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
